@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="https://www.pr.senac.br/images/topo_site_bl1_2018.png" alt=""></a>
+
+    </header>
+
+    <nav>
+        <a href="login.html"><input type="button" value="LOGIN" class="menu_button"></a>
+    </nav>
+
+    <script>
+        function enviar_email(){
+            if (document.getElementById("email").value != "") {
+                alert("Verifique sua caixa de entrada para recuperar sua senha!");
+                window.location.replace("/login.html")
+            } else {
+                alert("Insira um E-mail!");
+            }
+        }
+
+        function limpar(){
+            document.getElementById("email").value="";
+        }
+    </script>
+
+    <div class="web_post">
+
+        <section>
+            <label>Digite aqui seu e-mail.....:</label>
+            <input type="email" required id="email">
+            <br><br>
+            <input type="submit" value="Enviar" onclick="enviar_email()">
+            <input type="button" value="Limpar" onclick="limpar()">
+            <br>
+        </section>
+
+    </div>
+
+    <footer>
+        GRUPO 12 @ SENAC EAD - 2022
+
+    </footer>   
+</body>
+</html>

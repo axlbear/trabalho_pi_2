@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="https://www.pr.senac.br/images/topo_site_bl1_2018.png" alt=""></a>
+
+    </header>
+
+    <nav>
+        <a href="/login.html"><input type="button" value="LOGIN" class="menu_button"></a>
+    </nav>
+
+    <script>
+        function entrada() {
+            if (document.getElementById("username").value == "teste"){
+                alert("Bem Vindo, Teste!");
+                window.location.replace("/menu_principal.html");
+            } else {
+                alert("Usuário não encontrado!");
+            }
+            outcome;
+        }
+
+        function limpar(){
+            document.getElementById("username").value="";
+            document.getElementById("password").value="";
+        }
+    </script>
+
+    <div class="web_post">
+
+        <section>
+                <label>Usuário.....:</label>
+                <input type="text" required id="username">
+                <br>
+                <label>Senha.......:</label>
+                <input type="password" required id="password">
+                <br><br>
+                <input type="button" value="Entrar" onclick="entrada()">
+                <input type="button" value="Limpar" onclick="limpar()">
+                <br>
+                <a href="/novo_cadastro.html"><input type="button" value="Criar Novo Cadastro"></a>
+                <br>
+                <a href="/recuperar_senha.html"><input type="button" value="Recuperar Senha"></a>
+        </section>
+
+    </div>
+
+    <footer>
+        GRUPO 12 @ SENAC EAD - 2022
+
+    </footer>   
+</body>
+</html>
