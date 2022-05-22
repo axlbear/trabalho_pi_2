@@ -1,50 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Integrador</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página inicial - Projeto Integrador - GRUPO 12</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <a href="/index.html"><img src="https://www.pr.senac.br/images/topo_site_bl1_2018.png" alt=""></a>
-
-    </header>
-
-    <nav>
-        <a href="/login.html"><input type="button" value="LOGIN" class="menu_button"></a>
-    </nav>
-
-    <div class="web_post">
-
-        <section>
-            <h1>Projeto Integrador - GRUPO 12</h1>
-            <h3>Segunda Entrega</h3>
-            <hr>
-            <h3>Alunos:</h3>
-            <ul>
-                <li>Alex Marzani Motta</li>
-                <li>Adriano Carneiro dos Santos</li>
-                <li>Leonardo Hideki Nakamura</li>
-                <li>Caio Jorge da Silva Souza</li>
-                <li>Leandro Negrão Messinetti</li>
-                <li>Lucas Passos Silva dos Santos</li>
-            </ul>
-
-            <p>
-                Este é o protótipo do projeto enviado na primeira entrega do Projeto Integrador. <br>
-                Para iniciar, vá até o menu acima e clique em Login.
-            </p>
-
-        </section>
-
+<body class="d-flex flex-column h-100">
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/index.html"><img src="https://www.comotrabalhar.org/wp-content/uploads/2017/11/logo-SENAC-300x120.png"
+          class="img-fluid" alt=""></a>
     </div>
-
-    <footer>
-        GRUPO 12 @ SENAC EAD - 2022
-
-    </footer>   
+  </header>
+  <nav class="py-2 bg-primary border-bottom">
+    <div class="container d-flex flex-wrap">
+      <div>
+        <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+        <a href="cadastro.html"><button type="button" class="btn btn-warning">Cadastre-se</button></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">Segunda Entrega</span>
+      </a>
+    </header>
+    <div class="p-5 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Projeto Integrador - GRUPO 12</h1>
+        <h1" class="display-6">Alunos:</h1>
+          <ul class="col-md-6 list-group list-group-flush mt-3 fs-5">
+            <li class="list-group-item">Alex Marzani Motta</li>
+            <li class="list-group-item">Adriano Carneiro dos Santos</li>
+            <li class="list-group-item">Leonardo Hideki Nakamura</li>
+            <li class="list-group-item">Caio Jorge da Silva Souza</li>
+            <li class="list-group-item">Leandro Negrão Messinetti</li>
+            <li class="list-group-item">Lucas Passos Silva dos Santos</li>
+          </ul>
+          <p class="col-md-10 mt-4 fs-4"> Este é o protótipo do projeto enviado na primeira entrega do Projeto
+            Integrador. <br>
+            Para iniciar, vá até o menu acima e clique em Login.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <span class="text-light">GRUPO 12 @ SENAC EAD - 2022</span>
+    </div>
+  </footer>
 </body>
 </html>

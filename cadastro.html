@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página inicial - Projeto Integrador - GRUPO 12</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script>
+
+        function cadastro() {
+            alert("Cadastro criado com Sucesso!");
+        }
+
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/index.html"><img
+                    src="https://www.comotrabalhar.org/wp-content/uploads/2017/11/logo-SENAC-300x120.png"
+                    class="img-fluid" alt=""></a>
+        </div>
+    </header>
+    <nav class="py-2 bg-primary border-bottom">
+        <div class="container d-flex flex-wrap">
+            <div>
+                <a href="login.html"><button type="button" class="btn btn-warning me-2">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <span class="fs-4">Cadastre-se</span>
+            </a>
+        </header>
+
+        <div class="p-5 bg-light rounded-3">
+            <form class="row g-3" onsubmit="cadastro()">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Quero receber notificações
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-light">GRUPO 12 @ SENAC EAD - 2022</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

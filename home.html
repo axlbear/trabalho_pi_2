@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página inicial - Projeto Integrador - GRUPO 12</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/index.html"><img src="https://www.comotrabalhar.org/wp-content/uploads/2017/11/logo-SENAC-300x120.png"
+          class="img-fluid" alt=""></a>
+    </div>
+  </header>
+
+  <nav class="py-2 bg-primary border-bottom">
+    <div class="container flex-wrap">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="/index.html" class="nav-link px-2 text-white">Sobre</a></li>
+        </ul>
+
+        <div class="text-end">
+          <a href="/index.html"><button type="button" class="btn btn-danger">Log out</button></a>
+        </div>
+      </div>
+  </nav>
+
+  <div class="container py-4">
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold mb-4">Categorias de produtos</h1>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Itens</th>
+              <th scope="col">Total R$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Cereais</td>
+              <td>2</td>
+              <td>30.99</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Legumes</td>
+              <td>7</td>
+              <td>75.30</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Frutas</td>
+              <td>5</td>
+              <td>45.30</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Verduras</td>
+              <td>8</td>
+              <td>57.80</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Temperos</td>
+              <td>9</td>
+              <td>27.99</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Frios</td>
+              <td>13</td>
+              <td>95.93</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Congelados</td>
+              <td>5</td>
+              <td>62.12</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Bebidas</td>
+              <td>6</td>
+              <td>45.32</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Padaria</td>
+              <td>17</td>
+              <td>14.88</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Limpeza</td>
+              <td>5</td>
+              <td>73.92</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Higiene</td>
+              <td>8</td>
+              <td>47.35</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Carnes</td>
+              <td>4</td>
+              <td>328.80</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Outros</td>
+              <td>10</td>
+              <td>84.94</td>
+            </tr>
+            <tr>
+              <th scope="row">#</th>
+              <td class="fw-bold">Total</td>
+              <td id="total_itens">118</td>
+              <td id="total_valor">990.64</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+        <div class="row g-4">
+          <div class="input-group input-group-sm mb-3">
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected value="1">Cereais</option>
+                  <option value="2">Legumes</option>
+                  <option value="3">Frutas</option>
+                  <option value="4">Verduras</option>
+                  <option value="5">Temperos</option>
+                  <option value="6">Frios</option>
+                  <option value="7">Congelados</option>
+                  <option value="8">Bebidas</option>
+                  <option value="9">Padaria</option>
+                  <option value="10">Limpeza</option>
+                  <option value="11">Higiene</option>
+                  <option value="12">Carnes</option>
+                  <option value="13">Outros</option>
+                </select>
+                <label for="floatingSelectGrid">Selecione a categoria</label>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nome" value="Nome">
+                <label for="floatingInputGrid">Produto</label>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="number" class="form-control" id="floatingInputGrid" placeholder="1" value="1">
+                <label for="floatingInputGrid">Qtde</label>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="number" class="form-control" id="floatingInputGrid" placeholder="Valor" value="0">
+                <label for="floatingInputGrid">Valor</label>
+              </div>
+            </div>
+
+            <input class="btn btn-outline-secondary" type="button" value="Adicionar" onclick="adicionar()">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <span class="text-light">GRUPO 12 @ SENAC EAD - 2022</span>
+    </div>
+  </footer>
+</body>
+
+</html>

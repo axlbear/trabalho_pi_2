@@ -1,91 +1,33 @@
-body{
-    background-color: lightgray;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-
+html,
+body {
+  height: 100%;
 }
 
-header{
-
-    background-color: #3a6da1;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
-nav{
-    background-color: #f78b1f;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    position: fixed;
-    top: 115px;
-    width: 100%;
-
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
 }
 
-.menu_button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: white;
-    margin: 0px;
-    padding: 10px;
-    border: 0px;
-    background-color: transparent;
-    transition-delay: 5ms;
-    font-weight: bold;
+.form-signin .form-floating:focus-within {
+  z-index: 2;
 }
 
-.menu_button:hover{
-    background-color: white;
-    color: black;
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-
-.web_post{
-    background-color: whitesmoke;
-    margin: 180px 60px 80px 60px;
-    border: 2px;
-    border-style: solid;
-    padding: 0px;
-    box-shadow: 20px 20px 0px black;
-
-}
-
-.adicionar_item{
-    
-}
-
-
-
-section{
-    margin: 5px;
-    border: 2px;
-    border-style: solid;
-    padding: 10px;
-
-}
-
-footer{
-    background-color: #005493;
-    margin: 0px;
-    border: 0px;
-    padding: 10px;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    color: white;
-    text-align: center;
-
-}
-
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
