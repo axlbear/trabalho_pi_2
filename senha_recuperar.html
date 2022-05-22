@@ -36,39 +36,18 @@
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                <span class="fs-4">Cadastre-se</span>
+                <span class="fs-4">Recuperar senha</span>
             </a>
         </header>
 
         <div class="p-5 bg-light rounded-3">
-            <form class="row g-3" onsubmit="cadastro()">
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Sobrenome</label>
-                    <input type="text" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
+            <form class="row g-3 form-floating" onsubmit="cadastro()">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid"
+                    placeholder="name@example.com" value="example@example.com">
+                <label for="floatingInputInvalid">Email</label>
 
                 <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Quero receber notificações
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary" id="cadastrar">Enviar</button>
                 </div>
             </form>
 
