@@ -11,7 +11,8 @@
     <script>
 
         function cadastro() {
-            alert("Cadastro criado com Sucesso!");
+            alert("E-mail para recuperação enviado!");
+            window.location.replace("login.html");
         }
 
     </script>
@@ -41,9 +42,9 @@
         </header>
 
         <div class="p-5 bg-light rounded-3">
-            <form class="row g-3 form-floating" onsubmit="cadastro()">
+            <form class="row g-3 form-floating" onsubmit="cadastro()" action="/login.html">
                 <input type="email" class="form-control is-invalid" id="floatingInputInvalid"
-                    placeholder="name@example.com" value="example@example.com">
+                    placeholder="name@example.com" required>
                 <label for="floatingInputInvalid">Email</label>
 
                 <div class="col-12">

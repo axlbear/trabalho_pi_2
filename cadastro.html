@@ -11,7 +11,7 @@
     <script>
 
         function cadastro() {
-            alert("Cadastro criado com Sucesso!");
+                alert("Cadastro criado com sucesso!");          
         }
 
     </script>
@@ -35,28 +35,28 @@
 
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <label class="d-flex align-items-center text-dark text-decoration-none">
                 <span class="fs-4">Cadastre-se</span>
-            </a>
+            </label>
         </header>
 
         <div class="p-5 bg-light rounded-3">
-            <form class="row g-3" onsubmit="cadastro()">
+            <form class="row g-3" onsubmit="cadastro()" action="/index.html">
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                    <label for="inputEmail1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputEmail1" required placeholder="Digite seu primeiro nome">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Sobrenome</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                    <label for="inputEmail2" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="inputEmail2" required placeholder="Digite seu sobrenome completo">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <label for="inputEmail3" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail3" required placeholder="Digite seu e-mail completo">
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <input type="password" class="form-control" id="inputPassword4" required placeholder="Digite sua senha">
                 </div>
 
                 <div class="col-12">
