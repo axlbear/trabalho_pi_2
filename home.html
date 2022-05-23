@@ -28,6 +28,8 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Lista Detalhada</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Estatísticas</a></li>
           <li><a href="/index.html" class="nav-link px-2 text-white">Sobre</a></li>
         </ul>
 
@@ -38,6 +40,35 @@
   </nav>
 
   <div class="container py-4">
+    <script>
+
+      function add_cereais(){
+        let quant = parseInt(document.getElementById("floatingInputGrid_qtd").value);
+        let table_quant = parseInt(document.getElementById("cereais_qtd").textContent);
+
+        table_quant += quant;
+
+        document.getElementById("cereais_qtd").textContent = table_quant.toString();
+
+        let valr = parseFloat(document.getElementById("floatingInputGrid_vlr").value);
+        let table_valr = parseFloat(document.getElementById("cereais_vlr").textContent);
+
+        let resultado = table_valr;
+
+        resultado += (valr * quant);
+
+        parseFloat(resultado).toFixed(2);
+
+        document.getElementById("cereais_vlr").textContent = resultado.toString();
+
+        document.getElementById("cereais_qtd_final").textContent = table_quant.toString();
+        document.getElementById("cereais_vlr_final").textContent = resultado.toString();
+
+        alert("Novo(s) Item(s) adicionado(s) em: Cereais!");        
+
+      }
+
+    </script>
 
     <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
@@ -55,86 +86,86 @@
             <tr>
               <th scope="row">1</th>
               <td>Cereais</td>
-              <td>2</td>
-              <td>30.99</td>
+              <td><span id="cereais_qtd">0</span></td>
+              <td><span id="cereais_vlr">0</span></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Legumes</td>
-              <td>7</td>
-              <td>75.30</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>Frutas</td>
-              <td>5</td>
-              <td>45.30</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>Verduras</td>
-              <td>8</td>
-              <td>57.80</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">5</th>
               <td>Temperos</td>
-              <td>9</td>
-              <td>27.99</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">6</th>
               <td>Frios</td>
-              <td>13</td>
-              <td>95.93</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">7</th>
               <td>Congelados</td>
-              <td>5</td>
-              <td>62.12</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">8</th>
               <td>Bebidas</td>
-              <td>6</td>
-              <td>45.32</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">9</th>
               <td>Padaria</td>
-              <td>17</td>
-              <td>14.88</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">10</th>
               <td>Limpeza</td>
-              <td>5</td>
-              <td>73.92</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">11</th>
               <td>Higiene</td>
-              <td>8</td>
-              <td>47.35</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">12</th>
               <td>Carnes</td>
-              <td>4</td>
-              <td>328.80</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">13</th>
               <td>Outros</td>
-              <td>10</td>
-              <td>84.94</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
             <tr>
               <th scope="row">#</th>
               <td class="fw-bold">Total</td>
-              <td id="total_itens">118</td>
-              <td id="total_valor">990.64</td>
+              <td><span id="cereais_qtd_final">0</span></td>
+              <td><span id="cereais_vlr_final">0</span></td>
             </tr>
           </tbody>
 
@@ -165,26 +196,26 @@
 
             <div class="col-md">
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nome" value="Nome">
+                <input type="text" class="form-control" id="floatingInputGrid_nome">
                 <label for="floatingInputGrid">Produto</label>
               </div>
             </div>
 
             <div class="col-md">
               <div class="form-floating">
-                <input type="number" class="form-control" id="floatingInputGrid" placeholder="1" value="1">
-                <label for="floatingInputGrid">Qtde</label>
+                <input type="number" class="form-control" id="floatingInputGrid_qtd">
+                <label for="floatingInputGrid">Quantidade</label>
               </div>
             </div>
 
             <div class="col-md">
               <div class="form-floating">
-                <input type="number" class="form-control" id="floatingInputGrid" placeholder="Valor" value="0">
+                <input type="number" class="form-control" id="floatingInputGrid_vlr" placeholder="Valor" value="0">
                 <label for="floatingInputGrid">Valor</label>
               </div>
             </div>
 
-            <input class="btn btn-outline-secondary" type="button" value="Adicionar" onclick="adicionar()">
+            <input class="btn btn-outline-secondary" type="button" value="Adicionar" onclick="add_cereais()">
 
           </div>
 
